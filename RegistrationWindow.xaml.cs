@@ -23,5 +23,10 @@ namespace CarWash_Application
         {
             InitializeComponent();
         }
+
+        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
