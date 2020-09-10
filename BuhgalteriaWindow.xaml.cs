@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CarWash_Application
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Interaction logic for BuhgalteriaWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BuhgalteriaWindow : Window
     {
-        public MainWindow()
+        public BuhgalteriaWindow()
         {
             InitializeComponent();
-        }
-
-        private void ConfirmArmor_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
