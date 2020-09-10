@@ -18,5 +18,13 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Name: " FontSize="30" TextAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Phone num: " FontSize="30" TextAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Auto num: " FontSize="30" TextAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Name="NameTb" Grid.Column="1" Grid.Row="0" Margin="0,27,10,27"/>
+        <TextBox Name="PhoneTb" Grid.Column="1" Grid.Row="1" Margin="0,27,10,27"/>
+        <TextBox Name="AutoTb" Grid.Column="1" Grid.Row="2" Margin="0,27,10,27"/>
+        <Button Name="RegistrationBtn" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="31,25" Content="Registration" FontSize="20"/>
+        <CheckBox Name="LicensionCb" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="I agry with Privaty politic!" FontSize="33"/>
     </Grid>
 </Window>
