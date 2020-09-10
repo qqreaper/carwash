@@ -1,0 +1,15 @@
+C:\Users\Student\Documents\GitHub\carwash\bin\Debug\CarWash_Application.exe.config
+C:\Users\Student\Documents\GitHub\carwash\bin\Debug\CarWash_Application.exe
+C:\Users\Student\Documents\GitHub\carwash\bin\Debug\CarWash_Application.pdb
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.csprojAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\MainWindow.g.cs
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\App.g.cs
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application_MarkupCompile.cache
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application_MarkupCompile.lref
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\MainWindow.baml
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.g.resources
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.Properties.Resources.resources
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.csproj.GenerateResource.cache
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.exe
+C:\Users\Student\Documents\GitHub\carwash\obj\Debug\CarWash_Application.pdb

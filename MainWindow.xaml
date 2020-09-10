@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarWash_Application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="640" Width="810">
+    <Grid Background="Gray">
+        <Image Name="LogoImg" Margin="10,10,682,503" Source="Images\Logo.jpg"/>
+        <Image Name="BannerImg" Margin="155,10,37,503" Source="Images\Banner.jpg" Stretch="Fill"/>
+        <Grid Margin="20,106,20,67" Background="WhiteSmoke">
+            <ListView Name="WashOptionsLV" Margin="0,0,567,0"/>
+            <TextBlock Name="LicenseTblock" Text="Введите номер:" Margin="204,10,403,378" Background="Gray" FontSize="20"/>
+            <TextBox Name="InsertLicenseTb" Margin="364,10,10,378" MaxLength="8" FontSize="20"/>
+            <ListView Name="ArmorLv" Margin="204,65,10,79"/>
+            <TextBlock Name="CostTb" FontSize="20" Margin="204,370,403,10" Background="White"/>
+            <Button Name="ConfirmArmor" Margin="515,370,10,10" Content="Confirm bocking" FontSize="20" Click="ConfirmArmor_Click"/>
+        </Grid>
+        <TextBlock Name="CurrentSaleTb" Margin="20,538,539,10" Background="WhiteSmoke" FontSize="32"/>
+        <Label Name="NewsamdActionsLb" Margin="306,538,20,10" Content="We are open!!!" FontSize="25" Background="Pink" Foreground="HotPink"/>
     </Grid>
 </Window>
