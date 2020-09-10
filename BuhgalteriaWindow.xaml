@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="BuhgalteriaWindow" Height="450" Width="800">
     <Grid Background="Gray">
-        <TextBlock Name="NotStonksTb" Margin="10,10,435,366" Text="1" FontSize="30" Background="WhiteSmoke" TextAlignment="Center"/>
-        <TextBlock Name="StatisticTb" Margin="398,10,10,366" Text="1" FontSize="30" Background="WhiteSmoke" TextAlignment="Center"/>
+        <TextBlock Name="NotStonksTb" Margin="10,10,435,366" FontSize="30" Background="WhiteSmoke" TextAlignment="Center"/>
+        <TextBlock Name="StatisticTb" Margin="398,10,10,366" FontSize="30" Background="WhiteSmoke" TextAlignment="Center"/>
         <ListBox Name="StoryLb" Margin="10,74,10,10"/>
     </Grid>
 </Window>

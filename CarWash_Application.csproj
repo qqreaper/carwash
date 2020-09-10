@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RegistrationWindow.xaml.cs">
+      <DependentUpon>RegistrationWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="BuhgalteriaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,8 +77,20 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RegistrationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Box.cs" />
+    <Compile Include="model\Debug.cs" />
+    <Compile Include="model\typeOfWash\AutomaticWash.cs" />
+    <Compile Include="model\typeOfWash\DryWash.cs" />
+    <Compile Include="model\typeOfWash\HandWash.cs" />
+    <Compile Include="model\typeOfWash\IWash.cs" />
+    <Compile Include="model\typeOfWash\Self_serviceWash.cs" />
+    <Compile Include="model\typeOfWash\TypeWash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -101,8 +116,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< Updated upstream
-=======
   <ItemGroup>
     <Folder Include="controls\" />
     <Folder Include="data\" />
@@ -113,6 +126,5 @@
   <ItemGroup>
     <Resource Include="Images\Banner.jpg" />
   </ItemGroup>
->>>>>>> Stashed changes
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
