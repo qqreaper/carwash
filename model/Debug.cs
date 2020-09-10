@@ -23,8 +23,7 @@ namespace CarWash_Application.model
 
         public static string Log(string log)
         {
-            logs.Add(log);
-            MessageBox.Show(log);
+            logs.Add(DateTime.Now.ToShortTimeString().ToString() + "  |  " + log);
             return log;
         }
     }

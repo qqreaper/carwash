@@ -12,21 +12,19 @@ namespace CarWash_Application.model
     {
         private TypeWash wash;
 
-        public int BoxName { get; set; }
-
+        private Timer washTimer;
+        public bool IsBoxingFree { private set; get; }
+        public string BoxName { get; set; }
         public int CurrentPrice { get; set; }
-
         public int WashingTime { get; set; }
-
         public int ChemistryReserve { get; set; }
-
         public int WaterReserve { get; set; }
-
         public int EnergyReserve { get; set; }
 
         public Box()
         {
             wash = new TypeWash();
+            IsBoxingFree = true;
         }
 
         private bool CheckReserve()
@@ -35,7 +33,7 @@ namespace CarWash_Application.model
                 return true;
             else
             {
-                Debug.Log($"В боксе {BoxName} закончились запасы, - химикатов: {ChemistryReserve} | воды: {WaterReserve} | электроенергии: {EnergyReserve}");
+                Debug.Log($"В боксе {BoxName} закончились запасы, - химикатов: {ChemistryReserve} | воды: {WaterReserve} | электроенергии: {EnergyReserve}.");
                 return false;
             }
         }
@@ -48,24 +46,37 @@ namespace CarWash_Application.model
 
         public void StartWash()
         {
-            Timer timer = new Timer();
-            timer.Interval = 1000;
-            timer.Elapsed += WashProcess;
-            timer.Start();
-            Debug.Log($"Процесс мойки в боксе {BoxName} начат!");
+            if (IsBoxingFree)
+            {
+                washTimer = new Timer();
+                washTimer.Interval = 1000;
+                washTimer.Elapsed += WashProcess;
+                washTimer.Start();
+                IsBoxingFree = false;
+                Debug.Log($"Процесс мойки в боксе {BoxName} начат!");
+            }
+            else Debug.Log($"Нельзя начать мойку в боксе {BoxName}, она занята.");
+        }
+
+        public void EndWash()
+        {
+            washTimer.Stop();
+            IsBoxingFree = true;
+            Debug.Log($"Процесс мойки в боксе {BoxName} закончен!");
         }
 
         public void WashProcess(Object source, ElapsedEventArgs e)
         {
             if (WashingTime >= 0)
             {
-                if(CheckReserve())
-                { 
+                if (CheckReserve())
+                {
                     wash.DoWash(this);
                     WashingTime--;
                 }
-            } 
-            else Environment.Exit(0);
+                else EndWash();
+            }
+            else EndWash();
         }
     }
 }

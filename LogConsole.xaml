@@ -1,0 +1,14 @@
+﻿<Window x:Class="CarWash_Application.LogConsole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarWash_Application"
+        mc:Ignorable="d"
+        Title="LogConsole" Height="450" Width="800">
+    <WrapPanel>
+        <ScrollViewer>
+            <TextBlock Name="Log_TextBox" Foreground="White" Background="Black" FontSize="18" Width="800" Height="450"></TextBlock>
+        </ScrollViewer>
+    </WrapPanel>
+</Window>
